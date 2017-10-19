@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+.slick-slide-highlight-current {
+	opacity: 1;
+}
+
+.slick-slide-highlight-current.slick-current {
+	opacity: 0.3;
+}
+
+.hide-until-slick-initialized {
+	display: none;
+}
+
+.slick-initialized .hide-until-slick-initialized {
+	display: block;
+}
+
+@media screen {
+	.hide-until-slick-initialized-screen {
+		display: none;
+	}
+
+	.slick-initialized .hide-until-slick-initialized-screen {
+		display: block;
+	}
+}
+
+/* Slider */
+.slick-list-centered .slick-list {
+	padding: 0 10vw;
+}
+
+.slick-prev,
+.slick-next,
+.slick-hero-next,
+.slick-hero-prev {
+	position: absolute;
+	display: block;
+	height: 35px;
+	width: 20px;
+	line-height: 0px;
+	font-size: 0px;
+	cursor: pointer;
+	background: transparent;
+	color: transparent;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus,
+  .slick-hero-next:hover,
+  .slick-hero-next:focus,
+  .slick-hero-prev:hover,
+  .slick-hero-prev:focus {
+	outline: none;
+	color: transparent;
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before,
+    .slick-hero-next:hover:before,
+    .slick-hero-next:focus:before,
+    .slick-hero-prev:hover:before,
+    .slick-hero-prev:focus:before {
+	opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before,
+  .slick-hero-next.slick-disabled:before,
+  .slick-hero-prev.slick-disabled:before {
+	opacity: 0.25;
+}
+
+.slick-prev:before,
+  .slick-next:before,
+  .slick-hero-next:before,
+  .slick-hero-prev:before {
+	font-family: "slick";
+	font-size: 20px;
+	line-height: 1;
+	color: black;
+	opacity: 0.75;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+	left: -25px;
+	background-color: green; 
+}
+
+.slick-hero-prev {
+	left: 2.75vw;
+	background-color: green; 
+	height: 4.5vw;
+	width: 4.5vw;
+	z-index: 1000;
+	background-size: contain;
+}
+
+.slick-next {
+	right: -25px;
+	background-color: green;
+}
+
+.slick-hero-next {
+	right: 2.75vw;
+	background-color: green; 
+	height: 4.5vw;
+	width: 4.5vw;
+	background-size: contain;
+}
+
+.slick-hero-badge {
+	width: 7rem;
+	top: 1vw;
+	position: absolute;
+	z-index: 9999;
+	right: 11vw;
+	background-color: white;
+	border-radius: 0.25rem;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0;
+	font-family: "jaf-bernina-sans-comp", "Arial Narrow", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+
+.slick-container {
+	position: relative;
+}
+
+.slick-slide:focus {
+	outline: none;
+}
+
+.slick-track-black {
+	background-color: black;
+}
+
+.slick-control-active {
+	opacity: 0.3;
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+	margin-bottom: 30px;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: -25px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+
+.slick-dots li button {
+	border: 0;
+	background: transparent;
+	display: block;
+	height: 20px;
+	width: 20px;
+	outline: none;
+	line-height: 0px;
+	font-size: 0px;
+	color: transparent;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+	outline: none;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+	opacity: 1;
+}
+
+.slick-dots li button:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "•";
+	width: 20px;
+	height: 20px;
+	font-family: "slick";
+	font-size: 6px;
+	line-height: 20px;
+	text-align: center;
+	color: black;
+	opacity: 0.25;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+	color: black;
+	opacity: 0.75;
+}
+
+.slick-mask {
+	background-color: #282424;
+}
+
+.slick-masked-slide {
+	opacity: 0.25;
+}
