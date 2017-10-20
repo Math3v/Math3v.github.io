@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+  $('.slick-item').on('init', function(event, slick){
+    $('.hidden').removeClass('hidden');
+  });
+
   $('.slick-item').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
