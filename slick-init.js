@@ -11,5 +11,7 @@ $( document ).ready(function() {
    arrows: true,
    nextArrow: "<button type='button' class='slick-hero-next slick-arrow'>Next</button>",
    prevArrow: "<button type='button' class='slick-hero-prev'>Prev</button>",
+   centerMode: true,
+   centerPadding: '10vw'
   });
 });
